@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymelef.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>gallery</title>
+</head>
+<body>
+ <th:block th:insert="Header.html"></th:block> 
+  
+	 <div class="container-fluid">
+		<div class="card">
+
+			<div class="card-header">
+				<h5>All Images</h5>
+			</div>
+			<div class="card-body">
+				<span th:each = "imgName:${imgList}">
+				<img class="p-2" th:src="@{'/image/'+${imgName}}"width="285" height="285">
+				</span>
+					
+			</div>
+			<div class="card-footer text-center bg-warning">copyright@2024
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

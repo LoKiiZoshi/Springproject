@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymelef.org">
+
+<th:block th:insert="Header.html"></th:block>
+
+<body style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+        <h1>Product purchases</h1>
+        <form action="/process_product" method="post">
+            <label for="product_name" style="display: block;">Product Name:</label>
+            <input type="text" id="product_name" name="product_name" value="Apple" readonly style="width: 100%; box-sizing: border-box;">
+
+            <label for="product_price" style="display: block;">Price:</label>
+            <input type="text" id="product_price" name="product_price" value="RS:12,000,000" readonly style="width: 100%; box-sizing: border-box;">
+
+            <label for="product_description" style="display: block;">Description:</label>
+            <textarea id="product_description" name="product_description" rows="4" readonly style="width: 100%; box-sizing: border-box;">Quality best in the world</textarea>
+
+            <!-- Add other input fields (e.g., quantity, shipping address, etc.) as needed -->
+
+           <input type="submit" value="Purchases" style="width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; font-weight: bold; background-color: pink;">
+
+        </form>
+    </div>
+</body>
+
+</html>

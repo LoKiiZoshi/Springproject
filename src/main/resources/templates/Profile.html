@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymelef.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <th:block th:insert="Header.html"></th:block> 
+  
+	 <div class="container-fluid">
+		<div class="card">
+
+			<div class="card-header">
+				<h5>User profile Details</h5>
+			</div>
+			<div class="card-body">
+				
+					<div class="row p-2">
+						<div class="col-4">
+							<label for="dpt_name">First Name:</label>
+						</div>
+						<div class="col-6">
+							[[${session.validuser.fname}]]
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-4">
+							<label for="dpt_name">Last Name:</label>
+						</div>
+						<div class="col-6">
+							[[${session.validuser.lname}]]
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-4">
+							<label for="dpt_name">User Name:</label>
+						</div>
+						<div class="col-6">
+							[[${session.validuser.username}]]
+						</div>
+					</div>
+             </div>
+					
+			<div class="card-footer text-center bg-warning">copyright@2024
+			</div>
+		</div>
+	</div>
+</body>
+</html>
